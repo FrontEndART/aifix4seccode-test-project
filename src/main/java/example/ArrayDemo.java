@@ -21,7 +21,7 @@ public class ArrayDemo {
 
 
     public ArrayDemo withPermissionsToGive(String[] permissionsToGive) {
-        this.permissionsToGive = permissionsToGive;
+        this.permissionsToGive = Arrays.copyOf(permissionsToGive, permissionsToGive.length);
         return this;
     }
 

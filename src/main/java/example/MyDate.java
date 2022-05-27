@@ -17,6 +17,6 @@ public class MyDate {
     }
 
     public Date foo() {
-        return new Date(date.getTime());
+        return date; // good solution: return new Date(date.getTime());
     }
 }
