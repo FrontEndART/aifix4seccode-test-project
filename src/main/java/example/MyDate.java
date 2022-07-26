@@ -9,7 +9,7 @@ public class MyDate {
 
 
     public Date getDate() {
-        return date; //a flaw should occur at this point
+        return (Date)date.clone(); //a flaw should occur at this point
     }
 
     public void setDate(Date date) {
